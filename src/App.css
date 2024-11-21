@@ -1,38 +1,82 @@
-.App {
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  color: #003366;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #cce7ff;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.title {
   text-align: center;
+  color: #003366;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Form Styling */
+.form-container {
+  margin: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.json-input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #cce7ff;
+  border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.submit-button {
+  background-color: #007bff;
   color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+  color: red;
+}
+
+/* Dropdown Styling */
+.dropdown-container {
+  margin: 20px 0;
+}
+
+.dropdown-option {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.dropdown-option label {
+  margin-left: 5px;
+}
+
+/* Response Styling */
+.response-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e6f2ff;
+  border: 1px solid #cce7ff;
+  border-radius: 4px;
+}
+
+.response-container h3 {
+  margin: 0 0 10px;
+  color: #003366;
 }
